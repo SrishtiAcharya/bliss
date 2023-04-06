@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bliss | Beauty Salon And Products Online Website</title>
+    <!-- footer scripting for form-->
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="img/logo3circler.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+  <div id="home">
+    <div class="navbar">
+      <!-- nav bar -->
+      <div class="logo">
+        <a href="index.html"><img src="img/logo3bg.png" alt="Bliss | Beauty Products Website " width="90px" height="90px" class="centre"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#slider">Besties</a></li>
+          <li><a href="#brands">Brands</a></li>
+          <li><a href="shop.html">Products</a></li>
+          <li><a href="book.php">Appointment</a> </li>
+          <li><a href="#aboutus">About</a></li>
+        </ul>
+      </nav>
+  </div>
+    </div>
+
+<!-- festive offer -->
+<div class="festival">
+  <a href="festive.html" target="_blank"><img src="img/festival.jpg" alt="Bonus Festival Offer" width="1263px" height="300px"></a>
+</div>
+<!-- timer for offer ---->
+<!-- timer for next match -->
+ <div class="cntcontainer">
+     <h2>LIMITED OFFER !!!</h2>
+      <img src="img/offerrbg.png" width="120px" height="90px">
+    <p id="demo"></p>
+ </div>
+
+ <script>
+ // Set the date we're counting down to
+ var countDownDate = new Date("Jun 1, 2030 00:00:00").getTime();
+
+ // Update the count down every 1 second
+ var x = setInterval(function() {
+
+   // Get today's date and time
+   var now = new Date().getTime();
+
+   // Find the distance between now and the count down date
+   var distance = countDownDate - now;
+
+   // Time calculations for days, hours, minutes and seconds
+   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+   // Display the result in the element with id="demo"
+   document.getElementById("demo").innerHTML = days + "d  : " + hours + "h  : "
+   + minutes + "m  : " + seconds + "s";
+
+   // If the count down is finished, write some text
+   if (distance < 0) {
+     clearInterval(x);
+     document.getElementById("demo").innerHTML = "TIME UP !!!!";
+   }
+ }, 1000);
+ </script>
+
+<!-- shopping header -->
+
+<div class="container">
+<div class="row">
+  <div class="col-2">
+    <h1>We have some awesome services on our site , go check it out ! </h1>
+    <p>Quickly grab your wallet and let's goooo </p>
+       <a href="book.php" class="btn" target="_blank">Book Now &#10170;</a>
+  </div>
+  <div class="col-2">
+    <img src="carousel/scrub.jpg">
+  </div>
+</div>
+</div>
+</div>
+    <!-- slider carousel -->
+    <div id="slider">
+      <h1>BEST SELLERS</h1> <br><br>
+      <figure>
+        <img src="carousel/mama.jpg" class="image-resize">
+        <img src="carousel/mini.jpg" class="image-resize">
+        <img src="carousel/nivea.jpg" class="image-resize">
+        <img src="carousel/coffee-scrub.jpg" class="image-resize">
+        <img src="carousel/lip.jpg" class="image-resize">
+        <img src="carousel/scrub.jpg" class="image-resize">
+        <img src="carousel/shampoo.jpg" class="image-resize">
+        <img src="carousel/lakme.jpg" class="image-resize">
+        <img src="carousel/eye.jpg" class="image-resize">
+        <img src="carousel/organic.jpg" class="image-resize">
+        <img src="carousel/tsperfume.jpg" class="image-resize">
+      </figure>
+    </div>
+
+    <!-- offers -->
+    <div id="offers">
+      <div id="slider">
+        <h1>OFFERS</h1> <br><br>
+        <figure>
+          <img src="offers/bboffer.jpg" class="image-resize">
+          <img src="offers/makeupoffer.jpg" class="image-resize">
+          <img src="offers/nykaa.jpg" class="image-resize">
+          <img src="offers/niveaoffer.jpg" class="image-resize">
+          <img src="offers/dotoffer.jpg" class="image-resize">
+          <img src="offers/bio.jpg" class="image-resize">
+          <img src="offers/green.jpg" class="image-resize">
+          <img src="offers/loreal.jpg" class="image-resize">
+          <img src="offers/maybe.jpg" class="image-resize">
+          <img src="offers/lakme.jpg" class="image-resize">
+          <img src="offers/season.jpg" class="image-resize">
+        </figure>
+      </div>
+    </div>
+
+    <!-- brands -->
+    <div id="brands">
+      <div id="slider">
+        <h1>BRANDS</h1> <br><br>
+        <figure>
+          <img src="brands/biotique.jpg" class="image-resize">
+          <img src="brands/garnier.jpg" class="image-resize">
+          <img src="brands/lakme.jpg" class="image-resize">
+          <img src="brands/nivea.jpg" class="image-resize">
+          <img src="brands/parachute.jpg" class="image-resize">
+          <img src="brands/veet.jpg" class="image-resize">
+          <img src="brands/plum.jpg" class="image-resize">
+          <img src="brands/loreal.jpg" class="image-resize">
+          <img src="brands/joy.jpg" class="image-resize">
+          <img src="brands/himalaya.jpg" class="image-resize">
+          <img src="brands/dabur.jpg" class="image-resize">
+          <img src="brands/olay.jpg" class="image-resize">
+          <img src="brands/sugar.jpg" class="image-resize">
+          <img src="brands/elle18.jpg" class="image-resize">
+        </figure>
+      </div>
+    </div>
+    <br> <br>
+
+  <!-- about us-
+    <div id="aboutus">
+      <div class="container1">
+        <div class="row2">
+          <div class="contact-left">
+            <img src="img/logo3circler.png" alt="logo">
+            </div>
+          <div class="contact-right">
+            <table>
+              <tr>
+                Beauty Salon and Products online website.
+              </tr>
+              <tr>
+                This is a collaborative project developed and designed by
+                <a href="https://srishtiacharya.github.io/Portfolio/" target="_blank"><span class="srishti">Srishti Acharya</span></a> and <a href="https://in.linkedin.com/in/rachi-wasnik-4b6a65232" target="_blank"><span class="rachi">Rachi Wasnik</span></a>. We are 3<sup>rd</sup> Year Computer Science Students.
+                This is just a prototype for beauty salon and products e-commerce website using HTML, CSS, JavaScript.<br><br>
+              </tr>
+              <tr>
+                Feel free to contact us!
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <a class="gotopbtn" href="#home">&#8593;</a>
+    </div>
+    <div class="copyright">
+      <p>&#169; 2022 Bliss. All Rights Reserved.</p>
+    </div>-->
+
+    <footer>
+      <div id="aboutus">
+        <div class="rowf">
+          <div class="colf">
+            <img src="img/logo3circler.png" class="logof">
+            <p>Bliss is a collaborative project developed and designed by
+            <a href="https://srishtiacharya.github.io/Portfolio/" target="_blank"><span class="srishti">Srishti Acharya</span></a> and <a href="https://in.linkedin.com/in/rachi-wasnik-4b6a65232" target="_blank"><span class="rachi">Rachi Wasnik</span></a>. We are 3<sup>rd</sup> Year Computer Science Students.
+            This is just a prototype for beauty salon and products e-commerce website using HTML, CSS, JavaScript.<br><br></p>
+          </div>
+          <div class="colf">
+            <h3>Office <div class="underline"> <span></span> </div> </h3>
+            <p>MIT AOE Rd, Kate Patil Nagar, Alandi</p>
+            <p>Pune, Maharashtra, India, 412105</p>
+            <p class="email-id">query@bliss.com</p>
+            <h4>022 - 01234567</h4>
+          </div>
+          <div class="colf">
+            <h3>Links <div class="underline"> <span></span> </div> </h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#slider">Besties</a></li>
+              <li> <a href="book.php">Appointment</a> </li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="#brands">Brands</a></li>
+            </ul>
+            <br><br>
+            <div class="social-icons">
+              <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com" target="_blank"> <i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com" target="_blank"> <i class="fab fa-instagram"></i></a>
+              <a href="https://www.pinterest.com" target="_blank"> <i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="copyrightf">Copyright &#169; Bliss, 2022. | Designed, Developed and Managed by MITAOE Students of TY BTECH CSE.</p>
+      </div>
+    </footer>
+    <a class="gotopbtn" href="#home">&#8593;</a>
+  </body>
+</html>
